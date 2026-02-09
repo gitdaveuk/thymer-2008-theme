@@ -10,7 +10,7 @@
 html[data-theme="basic-light-thymer-2008"] {
     color-scheme: light;
     --text-base-size: 18px;
-    --font-sans: "Times New Roman";
+    --font-sans: "Georgia";
     
     /* ------------------------------------------- */
     /* 1. Headings - Soft Turquoise               */
