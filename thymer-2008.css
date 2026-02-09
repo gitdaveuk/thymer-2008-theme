@@ -1,0 +1,221 @@
+/*
+* Thymer 2008 Theme
+* Soft, cheerful colours inspired by Thymer's original palette
+* Light theme with lime green, turquoise, yellow, and peach accents
+*/
+
+/* ------------------------------------------- */
+/* Thymer 2008             */
+/* ------------------------------------------- */
+html[data-theme="basic-light-thymer-2008"] {
+    color-scheme: light;
+    --text-base-size: 18px;
+    --font-sans: "Times New Roman";
+    
+    /* ------------------------------------------- */
+    /* 1. Headings - Soft Turquoise               */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #5eb3c4;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Soft Cream & White  */
+    /* ------------------------------------------- */
+    --color-bg-50: #b8c9a3;
+    --color-bg-100: #d4e0c8;
+    --color-bg-150: #e3edd9;
+    --color-bg-200: #edf4e6;
+    --color-bg-300: #f4f8f0;
+    --color-bg-400: #f8fbf5;
+    --color-bg-500: #fafcf8;
+    --color-bg-600: #fafcf8;
+    --color-bg-700: #fcfdfb;
+    --color-bg-800: #edf4e6; /* Sidebar - soft green cream */
+    --color-bg-900: #f5f9f1; /* Main window - fresh white */
+    --color-bg-950: #fafcf8;
+    --color-bg-500-50: rgba(250, 252, 248, 0.5);
+    --color-bg-950-50: rgba(250, 252, 248, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Vibrant Lime Green     */
+    /* ------------------------------------------- */
+    --color-primary-50: #2d4500;
+    --color-primary-100: #466b00;
+    --color-primary-200: #5a8a00;
+    --color-primary-300: #6da000;
+    --color-primary-400: #7ab800; /* Lime Green */
+    --color-primary-500: #8acc1a;
+    --color-primary-600: #9dd944;
+    --color-primary-700: #b0e568;
+    --color-primary-800: #c3f08c;
+    --color-primary-900: #d6f7b0;
+    --color-primary-950: #f0fde0;
+    --color-primary-400-70: rgba(122, 184, 0, 0.7);
+    --color-primary-950-20: rgba(240, 253, 224, 0.2);
+    --color-primary-text-100: #fafcf8;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Deep Greens & Greys      */
+    /* ------------------------------------------- */
+    --color-text-50: #2a3a1e;
+    --color-text-100: #3a4a2e;
+    --color-text-200: #4a5a3e;
+    --color-text-300: #5a6a4e;
+    --color-text-400: #6a7a5e;
+    --color-text-500: #7a8a6e;
+    --color-text-600: #8a9a7e;
+    --color-text-700: #5a8a00;
+    --color-text-800: #4a5a3e;
+    --color-text-900: #fafcf8;
+    --color-text-950: #6a7a5e;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Gardening Thyme        */
+    /* ------------------------------------------- */
+    --text-ok: #7ab800;
+    --text-status-online: #7ab800;
+    --text-warning: #d9a521;
+    --text-error: #d64545;
+    --bg-alert: #d64545;
+    --fg-alert: #fafcf8;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Multi-Color    */
+    /* ------------------------------------------- */
+    --link-color: #5eb3c4; /* Soft Turquoise */
+    --link-hover-color: #3d99ad;
+    --ed-link-color: #5eb3c4;
+    --ed-link-hover-color: #3d99ad;
+
+    --ed-hashtag-color: #7ab800; /* Lime Green */
+    --ed-hashtag-bg: rgba(122, 184, 0, 0.1);
+
+    --ed-mention-color: #5eb3c4; /* Turquoise */
+    --ed-mention-bg: rgba(94, 179, 196, 0.1);
+    --ed-mention-hover-bg: rgba(94, 179, 196, 0.2);
+    --ed-mention-hover-color: #3d99ad;
+
+    --ed-datetime-color: #d9a521; /* Warm Yellow */
+    --ed-datetime-bg: rgba(217, 165, 33, 0.1);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Lime Green         */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #7ab800;
+    --ed-check-div-hover-border: #6da000;
+    --ed-check-done-bg: #7ab800;
+    --ed-check-done-fg: #fafcf8;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #8a9a7e !important;
+        text-decoration-color: #8a9a7e !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                        */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(122, 184, 0, 0.25);
+    --selection-fg: #fafcf8;
+    --ed-selection-self-bg: rgba(122, 184, 0, 0.25);
+    --ed-selection-blurred-bg: rgba(122, 184, 0, 0.12);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #5eb3c4 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #5eb3c4;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Soft Containers         */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #7ab800;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(237, 244, 230, 0.6);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #5a8a00 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(122, 184, 0, 0.08);
+    --ed-block-note-border: #7ab800;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Fresh Interface        */
+    /* ------------------------------------------- */
+    --cards-bg: #f5f9f1;
+    --cards-hover-bg: #edf4e6;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #7ab800;
+    --side-fg-active-focus: #fafcf8;
+    --sidebar-bg-hover: #e3edd9;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #fafcf8;
+    --cmdpal-selected-bg-color: #7ab800;
+    --cmdpal-selected-fg-color: #fafcf8;
+    --cmdpal-hover-bg-color: #f4f8f0;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #fafcf8;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #7ab800;
+    --input-border-shadow: 0 0 8px rgba(122, 184, 0, 0.3);
+
+    --button-primary-bg-color: #7ab800;
+    --button-primary-fg-color: #fafcf8;
+    --button-primary-bg-hover-color: #6da000;
+    --button-bg-color: #edf4e6;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #e3edd9;
+
+    --color-shadow: rgba(42, 58, 30, 0.1);
+    --color-shadow-cards: 0 4px 6px rgba(42, 58, 30, 0.06);
+    --color-shadow-hover: 0 6px 12px rgba(42, 58, 30, 0.12);
+
+    --logo-color: #7ab800;
+    --logo-glow-shadow:
+        0 0 15px rgba(122, 184, 0, 0.3),
+        0 0 30px rgba(122, 184, 0, 0.2);
+
+    /* Enums - Colorful Palette */
+    --enum-red-bg: rgba(214, 69, 69, 0.15);
+    --enum-red-fg: #d64545;
+    --enum-orange-bg: rgba(230, 142, 84, 0.15); /* Peachy */
+    --enum-orange-fg: #e68e54;
+    --enum-yellow-bg: rgba(217, 165, 33, 0.15); /* Warm Yellow */
+    --enum-yellow-fg: #d9a521;
+    --enum-green-bg: rgba(122, 184, 0, 0.15); /* Lime Green */
+    --enum-green-fg: #7ab800;
+    --enum-cyan-bg: rgba(94, 179, 196, 0.15); /* Turquoise */
+    --enum-cyan-fg: #5eb3c4;
+    --enum-blue-bg: rgba(108, 160, 220, 0.15); /* Soft Blue */
+    --enum-blue-fg: #6ca0dc;
+    --enum-purple-bg: rgba(155, 130, 200, 0.15);
+    --enum-purple-fg: #9b82c8;
+    --enum-pink-bg: rgba(230, 140, 170, 0.15);
+    --enum-pink-fg: #e68caa;
+
+    --prop-border-focused: #fafcf8;
+    --prop-bg-focused: rgba(122, 184, 0, 0.2);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #7ab800;
+    --ed-drag-handle-hover-border: #6da000;
+
+    /*--gradient-scrim: none;*/
+}
